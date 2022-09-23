@@ -5,7 +5,9 @@ export default class Form extends React.Component {
   render() {
     return (
       <div>
-        <TodoList/>
+        <TodoList
+          toDos = {this.props.toDos}
+          />
         <p>help</p>
         <p>I need to include an input field, an 'add todo' button (which does the same thing as the enter button), a 'clear completed' button, and for the submission to re-render the todo list with the additional do.</p>
         <div id="form">

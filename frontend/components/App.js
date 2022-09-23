@@ -4,7 +4,7 @@ import Form from './Form'
 const initialState =
 {
   toDos: [{name: `Organize Garage`, id: `1528817077286`,
-    completed: false }],
+    completed: false },{name: `Declutter Kitchen`, id: `2`, completed: false}, {name: `Clean kitty fountain`, id: `3`, completed: true}],
 }
 
   
@@ -21,7 +21,8 @@ export default class App extends React.Component {
         <div>
           This is my to-do app!
         </div>
-        <Form/>
+        <Form
+        toDos = {this.state.toDos}/>
       </>
     )
   }
