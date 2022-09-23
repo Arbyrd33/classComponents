@@ -4,7 +4,11 @@ export default class Todo extends React.Component {
   render() {
     return (
       <div>
-        Todo
+        <li>
+          <label>
+            todo! X Onclick, displays checkmark.
+          </label>
+        </li>
       </div>
     )
   }

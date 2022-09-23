@@ -48,7 +48,7 @@ In this project you will build an application that allows for todos to be added,
 - **Build all components as class components. Find them inside `frontend/components`.**
 - **Don't focus on styling. We want you to worry about function over form today.**
 - Your todo list should display a list of todos, an input field, a submit button, and a button to filter out completed todos.
-- `<App />` will hold all the data needed for this project.
+- OK! `<App />` will hold all the data needed for this project.
   - All of your application data will be stored here on `<App />`.
   - All of your `handler` functions should live here on `<App />`.
 - `<TodoList />` receives your todos array and iterates over the list generating a new `<Todo />` for each element in the array.

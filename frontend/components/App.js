@@ -1,4 +1,5 @@
 import React from 'react';
+import Form from './Form'
 
 const initialState =
 {
@@ -13,14 +14,18 @@ export default class App extends React.Component {
     super(props);
     this.state = initialState;
   }
+
   render() {
     return (
-      <div>
-        This is my to-do app! It's taken way too long for me to summon the courage to start this entire unit again, but I'm here, and I'm motivated.
-      </div>
+      <>
+        <div>
+          This is my to-do app!
+        </div>
+        <Form/>
+      </>
     )
   }
 }
-// - OK! `<App />` will hold all the data needed for this project.
+//   - `<App />` will hold all the data needed for this project.
 //   - All of your application data will be stored here on `<App />`.
 //   - All of your `handler` functions should live here on `<App />`.

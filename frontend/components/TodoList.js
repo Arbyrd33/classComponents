@@ -1,10 +1,12 @@
 import React from 'react'
+import Todo from './Todo.js'
 
 export default class TodoList extends React.Component {
   render() {
     return (
       <div>
-        TodoList
+        THIS IS A LIST OF THINGS TO DO!!!
+        <Todo/>
       </div>
     )
   }
