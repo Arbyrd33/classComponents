@@ -1,32 +1,18 @@
-import React from 'react';
-import Form from './Form'
-
-const initialState =
-{
-  toDos: [{name: `Organize Garage`, id: `1528817077286`,
-    completed: false },{name: `Declutter Kitchen`, id: `2`, completed: false}, {name: `Clean kitty fountain`, id: `3`, completed: true}],
-}
-
-  
+import React from 'react'
 
 export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = initialState;
+  constructor(){
+    super();
+    this.state() = {};
   }
-
   render() {
     return (
-      <>
-        <div>
-          This is my to-do app!
-        </div>
-        <Form
-        toDos = {this.state.toDos}/>
-      </>
+      <div>
+        This is my to to app! I hated what I'd built so far so instead of just staring at it I totally nuked it! I will understand the changes made to this course!
+      </div>
     )
   }
 }
-//   - `<App />` will hold all the data needed for this project.
+// - OK! `<App />` will hold all the data needed for this project.
 //   - All of your application data will be stored here on `<App />`.
 //   - All of your `handler` functions should live here on `<App />`.
