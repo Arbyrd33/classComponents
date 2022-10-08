@@ -1,15 +1,20 @@
-import React from 'react'
+import React from 'react';
+import Form from './Form';
+
 
 export default class App extends React.Component {
   constructor(){
     super();
-    this.state() = {};
+    this.state = {};
   }
   render() {
     return (
-      <div>
-        This is my to to app! I hated what I'd built so far so instead of just staring at it I totally nuked it! I will understand the changes made to this course!
-      </div>
+      <>
+        <div>
+          This is my to to app! I hated what I'd built so far so instead of just staring at it I totally nuked it! I will understand the changes made to this course!
+        </div>
+        <Form/>
+      </>
     )
   }
 }

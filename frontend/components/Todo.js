@@ -4,7 +4,7 @@ export default class Todo extends React.Component {
   render() {
     return (
       <div>
-        Todo
+        This is one of several ToDos.
       </div>
     )
   }
