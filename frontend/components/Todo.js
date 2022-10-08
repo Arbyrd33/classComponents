@@ -3,9 +3,15 @@ import React from 'react'
 export default class Todo extends React.Component {
   render() {
     return (
+      <>
       <div>
-        This is one of several ToDos.
-      </div>
+        {/* {
+        todos.map(todo=>{
+          return (<li>{todo.name}</li>)
+        })
+        } */}
+        </div>
+      </>
     )
   }
 }

@@ -7,19 +7,46 @@ export default class App extends React.Component {
   constructor(){
     super();
     this.state = {
-        name: 'Organize Garage',
-        id: 1528817077286, // could look different, you could use a timestamp to generate it
-        completed: false
+      todos:[
+        {
+          name: 'Organize Garage',
+          id: 1528817077286, // could look different, you could use a timestamp to generate it
+          completed: false
+        },
+        {
+          name: `A thing.`,
+          id: 4,
+          completed: false
+        },
+        {
+          name: `Another thing.`,
+          id: 5,
+          completed: true
+        },
+        {
+          name: `A thingly thing of things.`,
+          id: 6,
+          completed: false
+        }
+      ]
+       
       };
   }
 
   render() {
+    const {todos} = this.state
+    console.log(todos)
     return (
       <>
-        <div>
-          This is my to to app! I hated what I'd built so far so instead of just staring at it I totally nuked it! I will understand the changes made to this course! I need to {this.state.name} today.
-        </div>
-        <Form/>
+        <h1>
+          A basic to-do list.
+        </h1>
+        {
+        todos.map(todo=>{
+          return (<li key={todo.name}>{todo.name}</li>)
+        })
+        }
+        <Form dataFromApp = {this.state}/>
       </>
     )
   }
