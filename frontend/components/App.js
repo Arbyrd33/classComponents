@@ -1,6 +1,6 @@
 import React from 'react';
 import Form from './Form';
-
+import Todo from './Todo';
 
 
 export default class App extends React.Component {
@@ -27,6 +27,11 @@ export default class App extends React.Component {
           name: `A thingly thing of things.`,
           id: 6,
           completed: false
+        },
+        {
+          name: `Things full of things`,
+          id: 7,
+          completed: true
         }
       ]
        
@@ -43,7 +48,7 @@ export default class App extends React.Component {
         </h1>
         {
         todos.map(todo=>{
-          return (<li key={todo.name}>{todo.name}</li>)
+          return (<Todo key = {todo.id} name={todo.name} check={todo.completed}/>)
         })
         }
         <Form dataFromApp = {this.state}/>

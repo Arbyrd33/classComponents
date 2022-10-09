@@ -1,17 +1,10 @@
 import React from 'react'
 
-export default class Todo extends React.Component {
-  render() {
-    return (
-      <>
-      <div>
-        {/* {
-        todos.map(todo=>{
-          return (<li>{todo.name}</li>)
-        })
-        } */}
-        </div>
-      </>
-    )
-  }
+class Todo extends React.Component{
+  render(){
+    console.log(this.props.name)
+    return(<ul id = {this.props.key}>{this.props.name} {this.props.check ? `⭕️` : `❌`}</ul>)
+   }
 }
+
+export default Todo
